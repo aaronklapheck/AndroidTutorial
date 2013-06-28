@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etCity"
+        android:hint="City"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >"
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/etState"
+        android:hint="State"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		 >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/bDisplayWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Display Weather" />
+
+    <TextView
+        android:id="@+id/tvDisplayWeather"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="" />
+
+</LinearLayout>

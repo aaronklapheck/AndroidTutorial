@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tutorial.aaronpractice"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-sdk android:minSdkVersion="15" />
+    
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:icon="@drawable/ic_launcher">
+        
+        <activity 
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+        >
+        </activity>
+        
+        <activity
+            android:name="Splash"
+            android:label="@string/app_name_menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" /><!-- Launcher activity must have this! -->
+                <category android:name="android.intent.category.LAUNCHER" /><!-- Launcher activity must have this! -->
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="Counter"
+            android:label="@string/app_name_counter" >
+            <!-- <intent-filter>
+                <action android:name="com.tutorial.aaronpractice.COUNTER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter> -->
+            <!--  Don't need intent-filter because we are not calling this action using intent("name") 
+            we are instead launching the activity using a special type of intent which passes 
+            a class directly. -->
+        </activity>
+        <activity 
+            android:name="Menu"
+             android:label="@string/app_name_menu" >
+            <intent-filter>
+                <action android:name="com.tutorial.aaronpractice.MENU" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="TextPlay" 
+            android:label="@string/app_name_textplay">
+            
+        </activity>
+    
+        <activity android:name="Email" android:label="@string/app_name_email"></activity>
+        <activity android:label="@string/app_name_camera" android:name="Camera"
+            android:screenOrientation="portrait"
+            >
+            
+        </activity>
+        <activity android:name="Data" android:label="@string/app_name_activities"></activity>
+        <activity android:name="OpenedClass" android:label="@string/app_name_activities"></activity>
+        <activity android:name="AboutUs"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar"
+            android:label="@string/app_name_menu">
+            <intent-filter>
+                <action android:name="com.tutorial.aaronpractice.ABOUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Prefs">
+            <intent-filter>
+                <action android:name="com.tutorial.aaronpractice.PREFS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name_graphics" android:name="GFX"></activity>
+        <activity android:name="GFXSurface" android:label="@string/app_name_graphic_surface"></activity>
+        <activity android:label="@string/app_name_sounds" android:name="SoundStuff"></activity>
+        <activity android:name="Tabs" android:label="@string/app_name_tabs"></activity>
+        <activity android:name="TextInstruction" android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar" android:label="Instructions">
+            <intent-filter>
+                <action android:name="com.tutorial.aaronpractice.INSTRUCTIONS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="SharedPrefs" android:label="Playing with Data"></activity>
+        <activity android:name="InternalData" android:label="Internal Data"></activity>
+        <activity android:name="ExternalData" android:label="External Data"></activity>
+        <activity android:name="SQLiteExample" android:label="SQLite Simple"></activity>
+        <activity android:name="SQLView" android:label="SQL View">
+            <intent-filter>
+                <action android:name="com.tutorial.aaronpractice.SQLVIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Accelerate" android:label="Accelerometer"></activity>
+        <activity android:label="HTTP Client" android:name="HttpExample"></activity>
+        <activity android:label="Weather Data" android:name="WeatherXMLParsing"></activity>
+        
+        <receiver android:name="PoitlessWidget" android:label="Pointless Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/widget_stuff"
+                />
+        </receiver>
+        
+        <activity android:label="Configure" android:name="WidgetConfig">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity android:label="3D" android:name="GLExample"></activity>
+        <activity android:name="Voice" android:label="Voice Recognition"></activity>
+        <activity android:name="StatusBar" android:label="Notifications"></activity>
+        <activity android:label="Light Sensor Reading" android:name="LightSensorDisplay"></activity>
+    </application>
+
+</manifest>

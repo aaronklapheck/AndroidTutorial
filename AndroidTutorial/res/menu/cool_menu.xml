@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/aboutUs"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:numericShortcut="1"
+        android:title="About Us"
+        android:showAsAction="ifRoom|withText"
+        >
+    </item>
+    <item
+        android:id="@+id/share"
+        android:numericShortcut="2"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="Share"
+        android:showAsAction="ifRoom|withText"
+        >
+    </item>
+    <item
+        android:id="@+id/prefrences"
+        android:numericShortcut="3"
+        android:title="Preferences">
+    </item>
+    <item
+        android:id="@+id/exit"
+        android:numericShortcut="4"
+        android:title="Exit">
+    </item>
+
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:text="@string/hello"
+        android:textSize="40dp"
+        android:layout_gravity="center"
+    />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+
+
+        <Button
+            android:id="@+id/bAdd"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/add"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/bSub"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/subtract"
+            android:textSize="20dp" />
+        
+        
+        
+        
+    </LinearLayout>
+    
+    
+    <!-- Does not work! Works now: select Project, Properties, Java Build Path, 
+	Order and Export, then make sure checkbox for google admob is selected. -->
+	<!-- For this to work you need to have 2 permissions. 1. Internet, 2. Access network state.
+	Get your adUnitId from the AdMob website. Need to set up a new android application on the
+	website to get this id. Need to add GoogleAdMobAdsSdk-6.0.1.jar to library through Project
+	Properties, Java build path, libraries. Need to add google ads activity to manifest. Finally
+	need to add xmlns to activity layout in question (see above). -->
+	
+	
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adUnitId="a14fd7cfc9eee57"
+        ads:loadAdOnCreate="true"
+        ads:adSize="BANNER"
+        />
+        
+
+</LinearLayout>

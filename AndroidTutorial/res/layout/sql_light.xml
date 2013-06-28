@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <EditText
+        android:id="@+id/etSQLName"
+        android:hint="Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+         >
+    </EditText>
+
+    <EditText
+        android:id="@+id/etSQLHotness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hotness Scale from 1 to 10"
+        android:inputType="number"
+         />
+
+    <Button
+        android:id="@+id/bSQLUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update SQLite Database" />
+
+    <Button
+        android:id="@+id/bSQLView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View" />
+
+    <EditText
+        android:id="@+id/etEnterRowID"
+        android:hint="Enter Row ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+         />
+
+    <Button
+        android:id="@+id/bGetInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Information" />
+
+    <Button
+        android:id="@+id/bEditEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Entry " />
+
+    <Button
+        android:id="@+id/bDeleteEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Entry" />
+
+
+</LinearLayout>

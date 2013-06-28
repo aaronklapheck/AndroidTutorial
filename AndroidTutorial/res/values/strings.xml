@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Your total is 0</string>
+    <string name="app_name_camera">Setting Wallpaper</string>
+    <string name="add">Add one</string>
+    <string name="subtract">Subtract one</string>
+    <string name="hint">Type a Command</string>
+    <string name="textTstart">Invalid</string>
+    <string name="textBtry">Try Command</string>
+    <string name="textTtry">Tog</string>
+    <string name="app_name_email">Sending Email</string>
+    <string name="app_name_counter">Counting</string>
+    <string name="app_name_menu">Android Tutorial</string>
+    <string name="app_name_textplay">Playing With Text</string>
+    <string name="app_name_activities">Activity Passing</string>
+    <string name="app_name_graphics">Graphics</string>
+    <string name="app_name_graphic_surface">Graphic Surfaces</string>
+    <string name="app_name_sounds">Playing With Sounds</string>
+    <string name="app_name_tabs">Tab Layout</string>
+    <string name="max_light">&quot;Maximum Possible Reading: &quot;</string>
+    <string name="current_light">Current Reading:</string>
+
+</resources>
