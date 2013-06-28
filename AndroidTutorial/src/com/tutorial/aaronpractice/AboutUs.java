@@ -9,7 +9,7 @@ import android.os.Bundle;
  * of the screen. This is done my changing the theme for this activity in the Manifest file to:
  * Theme.DeviceDefault.Dialog.NoActionBar
  * 
- * <br /><br />
+ * <br />
  * @author Aaron Klapheck
  * @version 1.0.0
  */
