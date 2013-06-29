@@ -72,7 +72,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="Prefs">
+        <activity android:label="Prefs" android:name="Prefs">
             <intent-filter>
                 <action android:name="com.tutorial.aaronpractice.PREFS" />
                 <category android:name="android.intent.category.DEFAULT" />
